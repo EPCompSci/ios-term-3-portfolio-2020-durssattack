@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0UL-jY-7le">
+    <device id="ipad10_5" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title Screen View Controller-->
+        <scene sceneID="FGE-ol-lwO">
+            <objects>
+                <viewController id="0UL-jY-7le" customClass="TitleScreenViewController" customModule="Whammer_Hammer_1_1_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xa4-E8-iXU">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Whoopa Whammer Title Button" translatesAutoresizingMaskIntoConstraints="NO" id="6qV-VV-rPh">
+                                <rect key="frame" x="183.5" y="301" width="467" height="466"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="AdP-JQ-dJX" userLabel="Button Stack View">
+                                <rect key="frame" x="33" y="867" width="768" height="91"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3z-lb-vU3">
+                                        <rect key="frame" x="0.0" y="0.0" width="268" height="91"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
+                                        <state key="normal" title="Play Game"/>
+                                        <connections>
+                                            <action selector="PlayGame:" destination="0UL-jY-7le" eventType="touchUpInside" id="70u-pC-p43"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRM-d4-9zX">
+                                        <rect key="frame" x="348" y="0.0" width="119" height="91"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
+                                        <state key="normal" title="Story"/>
+                                        <connections>
+                                            <action selector="Story:" destination="0UL-jY-7le" eventType="touchUpInside" id="Stf-AU-Mrj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27r-to-szD">
+                                        <rect key="frame" x="547" y="0.0" width="221" height="91"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
+                                        <state key="normal" title="Difficulty"/>
+                                        <connections>
+                                            <action selector="Options:" destination="0UL-jY-7le" eventType="touchUpInside" id="YN9-w2-Pho"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whammer Hammer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2A-fx-B3n">
+                                <rect key="frame" x="52" y="140" width="730" height="63.5"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="50"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="k2A-fx-B3n" firstAttribute="centerX" secondItem="Xa4-E8-iXU" secondAttribute="centerX" id="168-I9-aL8"/>
+                            <constraint firstItem="AdP-JQ-dJX" firstAttribute="centerX" secondItem="Xa4-E8-iXU" secondAttribute="centerX" id="Clo-fm-JjU"/>
+                            <constraint firstItem="k2A-fx-B3n" firstAttribute="leading" secondItem="q5L-I4-Dwt" secondAttribute="leading" constant="52" id="Cwz-7u-6rN"/>
+                            <constraint firstItem="k2A-fx-B3n" firstAttribute="top" secondItem="q5L-I4-Dwt" secondAttribute="top" constant="140" id="FrV-fD-kuc"/>
+                            <constraint firstItem="q5L-I4-Dwt" firstAttribute="bottom" secondItem="AdP-JQ-dJX" secondAttribute="bottom" constant="154" id="daQ-bY-Wob"/>
+                            <constraint firstItem="6qV-VV-rPh" firstAttribute="top" secondItem="k2A-fx-B3n" secondAttribute="bottom" constant="97.5" id="hMA-I9-LtG"/>
+                            <constraint firstItem="AdP-JQ-dJX" firstAttribute="top" secondItem="6qV-VV-rPh" secondAttribute="bottom" constant="100" id="oB9-wA-pa9"/>
+                            <constraint firstItem="6qV-VV-rPh" firstAttribute="centerX" secondItem="Xa4-E8-iXU" secondAttribute="centerX" id="ytr-hW-wv0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q5L-I4-Dwt"/>
+                    </view>
+                    <connections>
+                        <segue destination="nH0-fY-vfS" kind="presentation" identifier="mySegue1" id="swW-HN-3y1"/>
+                        <segue destination="2ek-Ca-nM1" kind="presentation" identifier="mySegue2" id="UD3-FA-8fN"/>
+                        <segue destination="o8t-L9-i8p" kind="presentation" identifier="mySegue3" id="7AV-14-OkO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t4r-UQ-gXJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-429" y="54"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jjN-2S-maW">
+            <objects>
+                <viewController id="nH0-fY-vfS" customClass="ViewController" customModule="Whammer_Hammer_1_1_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QfG-Uk-YCo">
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="1006.9200564096436"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hek-wv-CJs" userLabel="Hammer">
+                                <rect key="frame" x="50" y="100" width="612" height="466"/>
+                                <state key="normal" image="Whoopa Whammer Title Button"/>
+                                <connections>
+                                    <action selector="Hammer:" destination="nH0-fY-vfS" eventType="touchUpInside" id="29l-yt-SmO"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Whoopa Whammer Title Button(PreSwing)" translatesAutoresizingMaskIntoConstraints="NO" id="2RT-N9-rJs">
+                                <rect key="frame" x="50" y="150" width="612.00000000000011" height="357"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6nK-Fj-hp7" userLabel="Points StackView">
+                                <rect key="frame" x="285.5" y="50" width="141.5" height="42"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ag-J6-RMe">
+                                        <rect key="frame" x="0.0" y="0.0" width="109.5" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYL-9c-JAO">
+                                        <rect key="frame" x="119.5" y="0.0" width="22" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Starstruck" translatesAutoresizingMaskIntoConstraints="NO" id="NET-Tw-F3b">
+                                <rect key="frame" x="231" y="550" width="250" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Ble-B8-BPc"/>
+                                    <constraint firstAttribute="height" constant="56" id="feG-lm-gx3"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhammerSprite" translatesAutoresizingMaskIntoConstraints="NO" id="kkP-vC-LSF" userLabel="Enemy">
+                                <rect key="frame" x="80" y="600" width="552" height="258"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdF-7t-Bx1">
+                                <rect key="frame" x="46" y="866" width="186" height="96"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
+                                <state key="normal" title="Go Back"/>
+                                <connections>
+                                    <action selector="GoBack:" destination="nH0-fY-vfS" eventType="touchUpInside" id="7Sb-nM-l5k"/>
+                                    <action selector="Hammer:" destination="nH0-fY-vfS" eventType="touchUpInside" id="nvY-DR-9rV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2RT-N9-rJs" firstAttribute="centerX" secondItem="QfG-Uk-YCo" secondAttribute="centerX" id="4r5-w9-Bbc"/>
+                            <constraint firstItem="hek-wv-CJs" firstAttribute="leading" secondItem="qIb-HP-Hzh" secondAttribute="leading" constant="50" id="7VK-6q-Yq8"/>
+                            <constraint firstItem="hek-wv-CJs" firstAttribute="centerX" secondItem="QfG-Uk-YCo" secondAttribute="centerX" id="85s-fK-CJv"/>
+                            <constraint firstItem="kkP-vC-LSF" firstAttribute="top" secondItem="qIb-HP-Hzh" secondAttribute="top" constant="600" id="Gva-jx-0Hl"/>
+                            <constraint firstItem="hek-wv-CJs" firstAttribute="top" secondItem="qIb-HP-Hzh" secondAttribute="top" constant="100" id="HL0-nO-7fh"/>
+                            <constraint firstItem="2RT-N9-rJs" firstAttribute="top" secondItem="qIb-HP-Hzh" secondAttribute="top" constant="150" id="Iol-9u-Avs"/>
+                            <constraint firstItem="hdF-7t-Bx1" firstAttribute="leading" secondItem="qIb-HP-Hzh" secondAttribute="leading" constant="46" id="MhS-IY-MI6"/>
+                            <constraint firstItem="qIb-HP-Hzh" firstAttribute="trailing" secondItem="hdF-7t-Bx1" secondAttribute="trailing" constant="480" id="NxH-cZ-154"/>
+                            <constraint firstItem="qIb-HP-Hzh" firstAttribute="trailing" secondItem="hek-wv-CJs" secondAttribute="trailing" constant="50" id="SGR-El-Zbn"/>
+                            <constraint firstItem="2RT-N9-rJs" firstAttribute="leading" secondItem="QfG-Uk-YCo" secondAttribute="leading" constant="50" id="TPw-qS-iFQ"/>
+                            <constraint firstItem="6nK-Fj-hp7" firstAttribute="top" secondItem="qIb-HP-Hzh" secondAttribute="top" constant="50" id="VCp-TZ-fZW"/>
+                            <constraint firstItem="hek-wv-CJs" firstAttribute="centerX" secondItem="QfG-Uk-YCo" secondAttribute="centerX" id="VEp-im-vZS"/>
+                            <constraint firstItem="NET-Tw-F3b" firstAttribute="top" secondItem="qIb-HP-Hzh" secondAttribute="top" constant="550" id="Z4q-QQ-6ff"/>
+                            <constraint firstItem="kkP-vC-LSF" firstAttribute="centerX" secondItem="QfG-Uk-YCo" secondAttribute="centerX" id="a1B-7L-wVR"/>
+                            <constraint firstItem="qIb-HP-Hzh" firstAttribute="bottom" secondItem="kkP-vC-LSF" secondAttribute="bottom" constant="149" id="ay0-9p-x3u"/>
+                            <constraint firstItem="kkP-vC-LSF" firstAttribute="leading" secondItem="qIb-HP-Hzh" secondAttribute="leading" constant="80" id="df5-18-iuo"/>
+                            <constraint firstItem="6nK-Fj-hp7" firstAttribute="centerX" secondItem="QfG-Uk-YCo" secondAttribute="centerX" id="dh1-vb-k2X"/>
+                            <constraint firstItem="qIb-HP-Hzh" firstAttribute="bottom" secondItem="hdF-7t-Bx1" secondAttribute="bottom" constant="45" id="hRt-Am-o8v"/>
+                            <constraint firstItem="hdF-7t-Bx1" firstAttribute="top" secondItem="kkP-vC-LSF" secondAttribute="bottom" constant="8" id="kHO-a1-gdv"/>
+                            <constraint firstItem="qIb-HP-Hzh" firstAttribute="bottom" secondItem="2RT-N9-rJs" secondAttribute="bottom" constant="500" id="nAI-MR-bZc"/>
+                            <constraint firstItem="qIb-HP-Hzh" firstAttribute="trailing" secondItem="kkP-vC-LSF" secondAttribute="trailing" constant="80" id="wBE-wd-XTM"/>
+                            <constraint firstAttribute="trailing" secondItem="2RT-N9-rJs" secondAttribute="trailing" constant="50" id="yol-rs-Ihd"/>
+                            <constraint firstItem="NET-Tw-F3b" firstAttribute="centerX" secondItem="QfG-Uk-YCo" secondAttribute="centerX" id="zgp-VO-oac"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qIb-HP-Hzh"/>
+                    </view>
+                    <connections>
+                        <outlet property="Enemy" destination="kkP-vC-LSF" id="UXW-0d-xNo"/>
+                        <outlet property="Hammerbutton" destination="2RT-N9-rJs" id="4VM-9h-4s3"/>
+                        <outlet property="Score" destination="YYL-9c-JAO" id="73O-ag-Kte"/>
+                        <outlet property="Starstruck" destination="NET-Tw-F3b" id="qde-CY-uHk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3W-ap-a16" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-401" y="1020"/>
+        </scene>
+        <!--Story View Controller-->
+        <scene sceneID="H0i-69-Fi0">
+            <objects>
+                <viewController id="2ek-Ca-nM1" customClass="StoryViewController" customModule="Whammer_Hammer_1_1_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fkk-2j-dNK">
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="1006.9200564096436"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Leon Sprite" translatesAutoresizingMaskIntoConstraints="NO" id="94X-d2-BLo">
+                                <rect key="frame" x="158" y="168" width="397" height="520"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpO-RP-q6Y">
+                                <rect key="frame" x="20" y="724" width="672" height="272"/>
+                                <string key="text">Meet Leon! He is from the town of Mallet and he needs your help to defend his home from the monsters! Control Leon and his mighty Whammer Hammer to defeat them!</string>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="34"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zu-Fd-UQL">
+                                <rect key="frame" x="20" y="20" width="186" height="96"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
+                                <state key="normal" title="Go Back"/>
+                                <connections>
+                                    <action selector="GoBack:" destination="2ek-Ca-nM1" eventType="touchUpInside" id="sZk-4i-qX1"/>
+                                    <action selector="GoBack:" destination="nH0-fY-vfS" eventType="touchUpInside" id="xMo-hx-TyB"/>
+                                    <action selector="Hammer:" destination="nH0-fY-vfS" eventType="touchUpInside" id="RVn-D4-Riz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="94X-d2-BLo" firstAttribute="top" secondItem="7zu-Fd-UQL" secondAttribute="bottom" constant="52" id="0tF-M7-KTp"/>
+                            <constraint firstItem="7zu-Fd-UQL" firstAttribute="top" secondItem="ZF3-dK-FNZ" secondAttribute="top" constant="20" id="134-rH-40X"/>
+                            <constraint firstItem="kpO-RP-q6Y" firstAttribute="top" secondItem="94X-d2-BLo" secondAttribute="bottom" constant="36" id="8oG-MD-bjy"/>
+                            <constraint firstItem="94X-d2-BLo" firstAttribute="top" secondItem="ZF3-dK-FNZ" secondAttribute="top" constant="168" id="9g9-Gd-5m5"/>
+                            <constraint firstItem="ZF3-dK-FNZ" firstAttribute="trailing" secondItem="94X-d2-BLo" secondAttribute="trailing" constant="157" id="Gdb-l6-yAM"/>
+                            <constraint firstItem="ZF3-dK-FNZ" firstAttribute="trailing" secondItem="kpO-RP-q6Y" secondAttribute="trailing" constant="20" id="TpK-FP-C0c"/>
+                            <constraint firstItem="ZF3-dK-FNZ" firstAttribute="trailing" secondItem="7zu-Fd-UQL" secondAttribute="trailing" constant="506" id="aS5-7e-YO4"/>
+                            <constraint firstItem="94X-d2-BLo" firstAttribute="leading" secondItem="ZF3-dK-FNZ" secondAttribute="leading" constant="158" id="hAB-o1-4ts"/>
+                            <constraint firstItem="kpO-RP-q6Y" firstAttribute="leading" secondItem="ZF3-dK-FNZ" secondAttribute="leading" constant="20" id="kEU-Z9-MdL"/>
+                            <constraint firstItem="7zu-Fd-UQL" firstAttribute="leading" secondItem="ZF3-dK-FNZ" secondAttribute="leading" constant="20" id="pNI-4L-O1C"/>
+                            <constraint firstItem="ZF3-dK-FNZ" firstAttribute="bottom" secondItem="94X-d2-BLo" secondAttribute="bottom" constant="319" id="tVq-5U-5fl"/>
+                            <constraint firstItem="ZF3-dK-FNZ" firstAttribute="bottom" secondItem="kpO-RP-q6Y" secondAttribute="bottom" constant="11" id="tgK-if-gcD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZF3-dK-FNZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CRM-DR-Lhb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1173.3812949640289" y="958.8129496402878"/>
+        </scene>
+        <!--Options View Controller-->
+        <scene sceneID="yJg-2J-jDD">
+            <objects>
+                <viewController id="o8t-L9-i8p" customClass="OptionsViewController" customModule="Whammer_Hammer_1_1_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ToQ-hz-V4b">
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="1006.9200564096436"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="GOm-9t-5lm">
+                                <rect key="frame" x="81" y="803" width="561" height="66"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuA-r6-UF1">
+                                        <rect key="frame" x="0.0" y="0.0" width="108" height="66"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
+                                        <state key="normal" title="Easy"/>
+                                        <connections>
+                                            <action selector="Easy:" destination="o8t-L9-i8p" eventType="touchUpInside" id="jRg-AJ-bnX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1Z-Oj-YaQ">
+                                        <rect key="frame" x="188" y="0.0" width="185" height="66"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
+                                        <state key="normal" title="Medium"/>
+                                        <connections>
+                                            <action selector="Medium:" destination="o8t-L9-i8p" eventType="touchUpInside" id="UrD-xi-9Ro"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Der-yH-btR">
+                                        <rect key="frame" x="453" y="0.0" width="108" height="66"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
+                                        <state key="normal" title="Hard"/>
+                                        <connections>
+                                            <action selector="Hard:" destination="o8t-L9-i8p" eventType="touchUpInside" id="5yA-YO-Ifd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oN-Wu-Gxe">
+                                <rect key="frame" x="145" y="164.5" width="423" height="53.5"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhammerSprite" translatesAutoresizingMaskIntoConstraints="NO" id="vdV-oD-vsc">
+                                <rect key="frame" x="236" y="483" width="240" height="253"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Starstruck" translatesAutoresizingMaskIntoConstraints="NO" id="wD3-gR-RSF">
+                                <rect key="frame" x="241" y="296" width="240" height="179"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9R-Mc-Wq2">
+                                <rect key="frame" x="57" y="59" width="176" height="57"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
+                                <state key="normal" title="Go Back"/>
+                                <connections>
+                                    <action selector="GoBack:" destination="o8t-L9-i8p" eventType="touchUpInside" id="0uX-Lg-Sij"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vdV-oD-vsc" firstAttribute="top" secondItem="0oN-Wu-Gxe" secondAttribute="bottom" constant="265" id="3jT-lI-eji"/>
+                            <constraint firstItem="WQJ-xG-6Aj" firstAttribute="trailing" secondItem="0oN-Wu-Gxe" secondAttribute="trailing" constant="144" id="7xs-vS-DYy"/>
+                            <constraint firstItem="0oN-Wu-Gxe" firstAttribute="leading" secondItem="WQJ-xG-6Aj" secondAttribute="leading" constant="145" id="7yV-hg-r6i"/>
+                            <constraint firstItem="vdV-oD-vsc" firstAttribute="top" secondItem="wD3-gR-RSF" secondAttribute="bottom" constant="8" id="A7I-LV-lmb"/>
+                            <constraint firstItem="wD3-gR-RSF" firstAttribute="leading" secondItem="WQJ-xG-6Aj" secondAttribute="leading" constant="241" id="Alu-Ha-ddX"/>
+                            <constraint firstItem="WQJ-xG-6Aj" firstAttribute="trailing" secondItem="o9R-Mc-Wq2" secondAttribute="trailing" constant="479" id="D1P-rC-n0U"/>
+                            <constraint firstItem="GOm-9t-5lm" firstAttribute="top" secondItem="vdV-oD-vsc" secondAttribute="bottom" constant="67" id="EaO-8C-DBG"/>
+                            <constraint firstItem="wD3-gR-RSF" firstAttribute="top" secondItem="0oN-Wu-Gxe" secondAttribute="bottom" constant="78" id="FbR-Gc-Dj3"/>
+                            <constraint firstItem="GOm-9t-5lm" firstAttribute="leading" secondItem="WQJ-xG-6Aj" secondAttribute="leading" constant="81" id="IZx-Ia-cxX"/>
+                            <constraint firstItem="o9R-Mc-Wq2" firstAttribute="leading" secondItem="WQJ-xG-6Aj" secondAttribute="leading" constant="57" id="JBN-oE-lc4"/>
+                            <constraint firstItem="GOm-9t-5lm" firstAttribute="top" secondItem="0oN-Wu-Gxe" secondAttribute="bottom" constant="585" id="PcD-dQ-sJb"/>
+                            <constraint firstItem="WQJ-xG-6Aj" firstAttribute="bottom" secondItem="GOm-9t-5lm" secondAttribute="bottom" constant="138" id="TSn-w1-c5e"/>
+                            <constraint firstItem="vdV-oD-vsc" firstAttribute="leading" secondItem="WQJ-xG-6Aj" secondAttribute="leading" constant="236" id="WMc-dk-c8k"/>
+                            <constraint firstItem="o9R-Mc-Wq2" firstAttribute="top" secondItem="WQJ-xG-6Aj" secondAttribute="top" constant="59" id="ixs-to-7v1"/>
+                            <constraint firstItem="WQJ-xG-6Aj" firstAttribute="trailing" secondItem="wD3-gR-RSF" secondAttribute="trailing" constant="231" id="lca-4d-tOE"/>
+                            <constraint firstItem="0oN-Wu-Gxe" firstAttribute="top" secondItem="WQJ-xG-6Aj" secondAttribute="top" constant="164.5" id="nGx-Ji-vqn"/>
+                            <constraint firstItem="WQJ-xG-6Aj" firstAttribute="trailing" secondItem="GOm-9t-5lm" secondAttribute="trailing" constant="70" id="qi9-Qe-Hd1"/>
+                            <constraint firstItem="GOm-9t-5lm" firstAttribute="top" secondItem="0oN-Wu-Gxe" secondAttribute="bottom" constant="585" id="vSK-sE-LMh"/>
+                            <constraint firstItem="WQJ-xG-6Aj" firstAttribute="trailing" secondItem="vdV-oD-vsc" secondAttribute="trailing" constant="236" id="wDR-8P-OUu"/>
+                            <constraint firstItem="0oN-Wu-Gxe" firstAttribute="top" secondItem="o9R-Mc-Wq2" secondAttribute="bottom" constant="48.5" id="zzs-4Y-fZB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WQJ-xG-6Aj"/>
+                    </view>
+                    <connections>
+                        <outlet property="Enemy" destination="vdV-oD-vsc" id="lcZ-Eh-EYb"/>
+                        <outlet property="Starstruck" destination="wD3-gR-RSF" id="aIt-0O-Vlp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tRs-tR-PvT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="354.6762589928058" y="958.8129496402878"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Leon Sprite" width="483" height="602"/>
+        <image name="Starstruck" width="772" height="238"/>
+        <image name="WhammerSprite" width="410" height="457"/>
+        <image name="Whoopa Whammer Title Button" width="467" height="466"/>
+        <image name="Whoopa Whammer Title Button(PreSwing)" width="478" height="472"/>
+    </resources>
+</document>
