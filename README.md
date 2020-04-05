@@ -15,3 +15,4 @@ Once the player reaches and defeats the last enemy, they win!
 There is also an difficulty setting with 3 different options consisting of Easy, Medium, and Hard.
 This game is not completed by any means and I will continue to work on it as times goes by!
 I hope you enjoy it!
+
