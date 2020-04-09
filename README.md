@@ -1,7 +1,7 @@
 # ios-term-3-portfolio-2020-durssattack
 ios-term-3-portfolio-2020-durssattack created by GitHub Classroom
 
-This includes my first original game called Whammer Hammer.
+This includes my first original game called [Whammer Hammer](https://github.com/EPCompSci/ios-term-3-portfolio-2020-durssattack/tree/master/Whammer%20Hammer%201.1.1)
 In the game, the main character is a guy named Leon. 
 His hometown of Mallet (pronounced MAL-AY) is being overun by monsters taking the form of inanimate objects
 Leon has to defeat the monsters with the help of his trusy Whammer Hammer.
